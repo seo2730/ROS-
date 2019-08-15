@@ -1,33 +1,23 @@
 # ROS 설치 명령어 모음
+>sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
-    sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'<br><br>
-    
+>sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 
-    sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654<br><br>
+>sudo apt-get update
 
+>sudo apt-get install ros-kinetic-desktop-full
 
-    sudo apt-get update<br><br>
+>sudo rosdep init
 
+>rosdep update
 
-    sudo apt-get install ros-kinetic-desktop-full<br><br>
+>echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 
+>source ~/.bashrc
 
-    sudo rosdep init<br><br>
+>source /opt/ros/kinetic/setup.bash
 
-
-    rosdep update<br><br>
-
-
-    echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc<br><br>
-
-
-    source ~/.bashrc<br><br>
-
-
-    source /opt/ros/kinetic/setup.bash<br><br>
-
-
-    sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential<br><br>
+>sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential
 
 # ~/.bashrc 파일 넣을 명령어
     alias cw='cd ~/catkin_ws'

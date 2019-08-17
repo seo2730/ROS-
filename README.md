@@ -1,3 +1,6 @@
+# 설치 영상
+https://www.youtube.com/watch?v=CE0_RHYLh0M
+
 # ROS 설치 명령어 모음
 >sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
@@ -27,3 +30,4 @@
     source ~/catkin_ws/devel/setup.bash
     export ROS_LOCALIP=xxx.xxx.xxx.xxx
     export ROS_MASTER_URI=http://${ROS_LOCALIP}:11311
+   
